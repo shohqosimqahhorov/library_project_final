@@ -61,10 +61,10 @@ ROOT_URLCONF = 'library_project.urls'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated', # barcha endpoinlar autehtifikatsiyali
+        'rest_framework.permissions.IsAuthenticated', # barcha endpointlar autehtifikatsiyali
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        # 'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ],
 }
